@@ -1,0 +1,26 @@
+{
+  "name": "roses-buds-thorns-slackbot",
+  "version": "1.0.0",
+  "description": "A slackbot to help us track the highlight, lowlights, and hopes of our day",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meliho/roses-buds-thorns-slackbot.git"
+  },
+  "keywords": [
+    "slackbot",
+    "wellness"
+  ],
+  "author": "Melih Onvural",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/meliho/roses-buds-thorns-slackbot/issues"
+  },
+  "homepage": "https://github.com/meliho/roses-buds-thorns-slackbot#readme",
+  "dependencies": {
+    "@slack/bolt": "^3.7.0"
+  }
+}
