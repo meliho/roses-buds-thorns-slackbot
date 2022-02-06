@@ -1,7 +1,7 @@
 const { App } = require('@slack/bolt');
 const {User} = require('./models/user.js');
 
-if(NODE_ENV !== 'production') {
+if(process.env.NODE_ENV !== 'production') {
   require("dotenv").config();
 }
 
