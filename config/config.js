@@ -19,11 +19,16 @@ module.exports = {
   },
   "production": {
     "use_env_variable": "DATABASE_URL",
-    "rejectUnauthorized": false,
     "username": DB_USERNAME,
     "password": DB_PASSWORD,
     "database": "roses_thorns_buds_prod",
     "host": DB_HOST,
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
   }
 }
