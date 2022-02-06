@@ -1,6 +1,9 @@
 const { App } = require('@slack/bolt');
-require("dotenv").config();
 const {User} = require('./models/user.js');
+
+if(NODE_ENV !== 'production') {
+  require("dotenv").config();
+}
 
 // Initializes your app with your bot token and app token
 const app = new App({
