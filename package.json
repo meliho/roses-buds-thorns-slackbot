@@ -6,6 +6,7 @@
   "scripts": {
     "test": "test",
     "dev": "nodemon app.js",
+    "build": "yarn run db:migrate",
     "db:create": "sequelize-cli db:create",
     "db:migrate": "sequelize-cli db:migrate",
     "db:g:migration": "sequelize-cli migration:generate --name",
