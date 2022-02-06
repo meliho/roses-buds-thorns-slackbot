@@ -5,14 +5,14 @@ const { DB_HOST, DB_USERNAME, DB_PASSWORD } = process.env;
 module.exports = {
   "development": {
     "username": DB_USERNAME,
-    "password": null,
-    "database": "roses_thorns_buds",
+    "password": DB_PASSWORD,
+    "database": "roses_thorns_buds_dev",
     "host": DB_HOST,
     "dialect": "postgres"
   },
   "test": {
     "username": DB_USERNAME,
-    "password": null,
+    "password": DB_PASSWORD,
     "database": "roses_thorns_buds_test",
     "host": DB_HOST,
     "dialect": "postgres"
@@ -21,7 +21,7 @@ module.exports = {
     "use_env_variable": "DATABASE_URL",
     "username": DB_USERNAME,
     "password": DB_PASSWORD,
-    "database": "d8qoonbn1n18as",
+    "database": "roses_thorns_buds_prod",
     "host": DB_HOST,
     "dialect": "postgres"
   }
